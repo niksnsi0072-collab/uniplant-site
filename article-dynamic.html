@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Новость — ЮниПлант</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="article.css">
+  <link rel="stylesheet" href="lightbox.css">
+</head>
+<body>
+
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-bar"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src="img/logo-rus.png" alt="ЮниПлант" class="logo-img">
+      </a>
+      <nav class="nav">
+        <a href="index.html#industries" class="nav-link">Отрасли</a>
+        <a href="index.html#solutions" class="nav-link">Наши решения</a>
+        <a href="index.html#partners" class="nav-link">Партнёры</a>
+        <a href="news.html" class="nav-link">Новости</a>
+        <a href="index.html#contact" class="nav-link">Контакты</a>
+      </nav>
+      <div class="header-right">
+        <div class="lang-toggle">
+          <button class="lang-btn lang-btn--active">RU</button>
+          <button class="lang-btn">EN</button>
+        </div>
+        <button class="burger" id="burger" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <nav class="mobile-nav">
+      <a href="index.html#industries" class="mobile-nav-link">Отрасли</a>
+      <a href="index.html#solutions" class="mobile-nav-link">Наши решения</a>
+      <a href="index.html#partners" class="mobile-nav-link">Партнёры</a>
+      <a href="news.html" class="mobile-nav-link">Новости</a>
+      <a href="index.html#contact" class="mobile-nav-link">Контакты</a>
+    </nav>
+  </div>
+
+  <!-- Article Content (filled dynamically) -->
+  <section class="article-hero" id="articleHero">
+    <div class="article-hero-inner">
+      <div class="breadcrumb">
+        <a href="index.html">Главная</a>
+        <span>/</span>
+        <a href="news.html">Новости</a>
+        <span>/</span>
+        <span class="breadcrumb-current" id="breadcrumbTitle">Загрузка...</span>
+      </div>
+      <div class="article-meta" id="articleMeta"></div>
+      <h1 class="article-title" id="articleTitle">Загрузка...</h1>
+    </div>
+  </section>
+
+  <section class="article-body">
+    <div class="article-body-inner">
+      <div class="article-main" id="articleMain">
+        <p>Загрузка содержимого...</p>
+      </div>
+      <aside class="article-sidebar" id="articleSidebar"></aside>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose"><i data-lucide="x"></i></button>
+    <button class="lightbox-prev" id="lightboxPrev"><i data-lucide="chevron-left"></i></button>
+    <button class="lightbox-next" id="lightboxNext"><i data-lucide="chevron-right"></i></button>
+    <div class="lightbox-content">
+      <img src="" alt="" id="lightboxImg">
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+    <div class="lightbox-counter" id="lightboxCounter"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="img/footer-logo.png" alt="Сатурн Индастрис" class="footer-logo">
+          <p class="footer-tagline">Интеллектуальные платформы<br>управления для промышленности</p>
+        </div>
+        <div class="footer-nav">
+          <div class="footer-col">
+            <h4 class="footer-col-title">Компания</h4>
+            <a href="index.html" class="footer-link">О компании</a>
+            <a href="index.html#partners" class="footer-link">Партнёры</a>
+            <a href="index.html#contact" class="footer-link">Контакты</a>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-col-title">Решения</h4>
+            <a href="index.html" class="footer-link">Астра СИМ 2.0</a>
+            <a href="index.html" class="footer-link">Астра КИП</a>
+            <a href="index.html#industries" class="footer-link">Отрасли</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <span class="footer-copy">&copy; 2024 Сатурн Индастрис. Все права защищены.</span>
+        <div class="footer-social">
+          <a href="#" class="footer-social-link"><i data-lucide="mail"></i></a>
+          <a href="#" class="footer-social-link"><i data-lucide="phone"></i></a>
+          <a href="#" class="footer-social-link"><i data-lucide="globe"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Наверх">
+    <i data-lucide="arrow-up"></i>
+  </button>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="article.js"></script>
+  <script src="lightbox.js"></script>
+  <script>
+    // Load dynamic article
+    (async function() {
+      const params = new URLSearchParams(window.location.search);
+      const id = params.get('id');
+      if (!id) return;
+
+      try {
+        const res = await fetch('api/news.php?id=' + encodeURIComponent(id));
+        if (!res.ok) return;
+        const item = await res.json();
+
+        document.title = item.title + ' — ЮниПлант';
+        document.getElementById('breadcrumbTitle').textContent = item.title.substring(0, 30) + '...';
+        document.getElementById('articleTitle').textContent = item.title;
+
+        // Meta
+        const metaEl = document.getElementById('articleMeta');
+        metaEl.innerHTML = `
+          ${item.date_display ? `<span class="article-badge article-badge--date"><i data-lucide="calendar"></i> ${item.date_display}</span>` : ''}
+          ${item.tag ? `<span class="article-badge article-badge--src"><i data-lucide="tag"></i> ${item.tag}</span>` : ''}
+        `;
+
+        // Content
+        const mainEl = document.getElementById('articleMain');
+        let html = '';
+
+        if (item.cover) {
+          html += `<div class="article-img"><img src="uploads/${item.cover}" alt=""></div>`;
+        }
+
+        html += item.content || `<p>${item.description || ''}</p>`;
+
+        // Gallery
+        if (item.gallery && item.gallery.length) {
+          html += `<div class="article-divider"></div>`;
+          html += `<h2>Фотогалерея</h2>`;
+          html += `<div class="article-gallery">`;
+          item.gallery.forEach((photo, i) => {
+            html += `
+              <div class="gallery-photo" data-index="${i}" onclick="openLightbox(${i})">
+                <img src="uploads/${photo.file}" alt="${photo.caption || ''}">
+                ${photo.caption ? `<span class="gallery-caption">${photo.caption}</span>` : ''}
+              </div>`;
+          });
+          html += `</div>`;
+
+          // Init lightbox data
+          window.lightboxData = item.gallery.map(p => ({
+            src: 'uploads/' + p.file,
+            caption: p.caption || ''
+          }));
+        }
+
+        mainEl.innerHTML = html;
+
+        // Sidebar
+        const sidebarEl = document.getElementById('articleSidebar');
+        sidebarEl.innerHTML = `
+          <div class="sidebar-card">
+            <h3>${item.tag || 'Новость'}</h3>
+            <p>${item.description || ''}</p>
+            <a href="news.html" class="btn btn--primary btn--sm sidebar-btn">Все новости</a>
+          </div>
+        `;
+
+        lucide.createIcons();
+      } catch(e) {
+        console.error(e);
+      }
+    })();
+  </script>
+</body>
+</html>

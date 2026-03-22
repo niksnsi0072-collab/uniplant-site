@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Астра КИП: система диагностики с дополненной реальностью — ЮниПлант</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="article.css">
+</head>
+<body>
+
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-bar"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src="img/logo-rus.png" alt="ЮниПлант" class="logo-img">
+      </a>
+      <nav class="nav" id="nav">
+        <a href="index.html#industries" class="nav-link">Отрасли</a>
+        <a href="index.html#solutions" class="nav-link">Наши решения</a>
+        <a href="index.html#partners" class="nav-link">Партнёры</a>
+        <a href="index.html#news" class="nav-link">Новости</a>
+        <a href="index.html#contact" class="nav-link">Контакты</a>
+      </nav>
+      <div class="header-right">
+        <div class="lang-toggle">
+          <button class="lang-btn lang-btn--active">RU</button>
+          <button class="lang-btn">EN</button>
+        </div>
+        <button class="burger" id="burger" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <nav class="mobile-nav">
+      <a href="index.html#industries" class="mobile-nav-link">Отрасли</a>
+      <a href="index.html#solutions" class="mobile-nav-link">Наши решения</a>
+      <a href="index.html#partners" class="mobile-nav-link">Партнёры</a>
+      <a href="index.html#news" class="mobile-nav-link">Новости</a>
+      <a href="index.html#contact" class="mobile-nav-link">Контакты</a>
+    </nav>
+  </div>
+
+  <!-- Article Hero -->
+  <section class="article-hero">
+    <div class="article-hero-inner">
+      <div class="breadcrumb">
+        <a href="index.html">Главная</a>
+        <span>/</span>
+        <a href="index.html#news">Новости</a>
+        <span>/</span>
+        <span class="breadcrumb-current">Астра КИП</span>
+      </div>
+      <div class="article-meta">
+        <span class="article-badge article-badge--date"><i data-lucide="calendar"></i> Октябрь 2025</span>
+        <span class="article-badge article-badge--src"><i data-lucide="book-open"></i> Газовая промышленность №10 | 2025</span>
+      </div>
+      <h1 class="article-title">Астра КИП: система диагностики состояния средств и систем автоматизации с использованием интерфейса дополненной реальности</h1>
+    </div>
+  </section>
+
+  <!-- Article Body -->
+  <section class="article-body">
+    <div class="article-body-inner">
+      <!-- Main Content -->
+      <div class="article-main">
+        <p class="article-lead">В рамках XIV Петербургского международного газового форума на стенде ООО «Газпром добыча Астрахань» была продемонстрирована инновационная разработка компании «Сатурн Индастрис» — система диагностики состояния средств и систем автоматизации ПАК «Астра КИП». Она представляет собой программно-аппаратный диагностический комплекс с визуализацией параметров оборудования автоматизации способом дополненной реальности (AR-интерфейса).</p>
+
+        <div class="article-img">
+          <img src="img/solution-kip.png" alt="Астра КИП">
+        </div>
+
+        <h2>AR-интерфейс и визуализация данных</h2>
+        <p>Опция дополненной реальности реализуется в виде специальных очков, позволяющих отображать данные в 2D/3D-формате с привязкой к физическому объекту. Система обеспечивает автоматическое определение типа и модели средства автоматизации при наведении зрительной зоны очков, допуская использование вспомогательной информации, например QR-кодов.</p>
+
+        <div class="article-features-box">
+          <h3>В зоне дополненной реальности отображается:</h3>
+          <div class="article-feature">
+            <i data-lucide="gauge"></i>
+            <p>До трёх измеряемых прибором величин (расход, давление, температура) в виде абсолютного значения и графика</p>
+          </div>
+          <div class="article-feature">
+            <i data-lucide="info"></i>
+            <p>Серийный номер, модель, производитель, статус, даты технического и метрологического обслуживания, границы шкал</p>
+          </div>
+          <div class="article-feature">
+            <i data-lucide="triangle-alert"></i>
+            <p>Цветовая индикация при выходе за допустимые пределы</p>
+          </div>
+          <div class="article-feature">
+            <i data-lucide="chart-bar"></i>
+            <p>Статистика отказов прибора</p>
+          </div>
+        </div>
+
+        <h2>Технологическая платформа</h2>
+        <p>Система является российским программным обеспечением, работающим под управлением операционной системы Linux, включая российские дистрибутивы, и полностью соответствует требованиям к отечественному ПО. Она построена на микросервисной архитектуре и ПО с открытым исходным кодом.</p>
+        <p>«Астра КИП» позволяет не только формировать и автоматически актуализировать базу данных оборудования, но и управлять процессами ТОиР, метрологического обслуживания, а также выполнять постоянный сбор данных с интеллектуальных КИП об их состоянии и возникающих неисправностях. Кроме того, она даёт возможность проводить удалённую диагностику и настройку приборов КИП.</p>
+
+        <h2>Подключение и сбор данных</h2>
+        <p>Система может подключаться к датчикам по протоколу HART или другим промышленным протоколам с возможностью передачи данных как по промышленным каналам связи Ethernet, так и с использованием беспроводных решений на базе LoRaWAN. Сервер ПАК «Астра КИП» производит обнаружение датчиков через опрос HART-мультиплексоров либо по протоколу TCP/IP через устройства преобразования сигнала.</p>
+        <p>Применение технологии LoRa и протокола LoRaWAN позволяет организовать эффективное решение для масштабируемых, энергоэффективных и надёжных систем дистанционного мониторинга в условиях добывающего производства, где критически важным является оперативный сбор данных с контрольно-измерительных приборов на обширных и труднодоступных территориях.</p>
+
+        <h2>Интеграция с АСУ ТП</h2>
+        <div class="article-features-box">
+          <h3>За счёт интеграции с АСУ ТП система обеспечивает:</h3>
+          <div class="article-feature">
+            <i data-lucide="shield-check"></i>
+            <p>Формирование подсистемы поддержки принятия решений в части надёжности и отказоустойчивости средств автоматизации</p>
+          </div>
+          <div class="article-feature">
+            <i data-lucide="bell"></i>
+            <p>Оповещение АСУ ТП о важных событиях, связанных с состоянием датчиков, и вывод дополнительной диагностической информации</p>
+          </div>
+          <div class="article-feature">
+            <i data-lucide="link"></i>
+            <p>Получение из АСУ ТП информации о состоянии датчиков, подключённых по протоколу NAMUR</p>
+          </div>
+        </div>
+
+        <h2>Возможности системы</h2>
+        <ul class="article-capabilities">
+          <li>Формирование цифрового паспорта технологического оборудования, включая средства автоматизации и оборудование энергетики</li>
+          <li>Сбор и обработка технологической и служебной информации по каждому средству измерений</li>
+          <li>Предоставление персоналу оперативного, интуитивно понятного доступа к данным приборов учёта непосредственно в поле зрения</li>
+          <li>Минимизация необходимости физического взаимодействия с приборами или стационарными терминалами</li>
+          <li>Повышение эффективности мониторинга, диагностики и технического обслуживания</li>
+          <li>Подготовка отчётной документации по техническому обслуживанию и ремонту оборудования</li>
+          <li>Проведение административно-производственного контроля технологического оборудования на опасных производственных объектах</li>
+          <li>Гибкая интеграция со смежными информационными системами и расчёт обобщённых показателей надёжности оборудования</li>
+        </ul>
+
+        <div class="article-divider"></div>
+
+        <h2>Фотогалерея</h2>
+        <p>Фотографии с XIV Петербургского международного газового форума и демонстрации системы «Астра КИП»</p>
+        <div class="article-gallery">
+          <div class="gallery-placeholder"><i data-lucide="image"></i><span>Фото 1</span></div>
+          <div class="gallery-placeholder"><i data-lucide="image"></i><span>Фото 2</span></div>
+          <div class="gallery-placeholder"><i data-lucide="image"></i><span>Фото 3</span></div>
+          <div class="gallery-placeholder"><i data-lucide="image"></i><span>Фото 4</span></div>
+          <div class="gallery-placeholder"><i data-lucide="image"></i><span>Фото 5</span></div>
+          <div class="gallery-placeholder"><i data-lucide="image"></i><span>Фото 6</span></div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="article-sidebar">
+        <div class="sidebar-card">
+          <h3>О продукте</h3>
+          <p>ПАК «Астра КИП» — программно-аппаратный комплекс диагностики состояния средств автоматизации с AR-интерфейсом.</p>
+          <a href="index.html" class="btn btn--primary btn--sm sidebar-btn">Подробнее о продукте</a>
+        </div>
+        <div class="sidebar-card">
+          <h3>Технологии</h3>
+          <div class="sidebar-tags">
+            <span class="sidebar-tag">HART</span>
+            <span class="sidebar-tag">LoRaWAN</span>
+            <span class="sidebar-tag">Linux</span>
+            <span class="sidebar-tag">Дополненная реальность</span>
+            <span class="sidebar-tag">Микросервисы</span>
+          </div>
+        </div>
+        <div class="sidebar-card">
+          <h3>Источник</h3>
+          <p>Журнал «Газовая промышленность»<br>№10 (888), 2025 г.<br>Рубрика: Автоматизация</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="img/footer-logo.png" alt="Сатурн Индастрис" class="footer-logo">
+          <p class="footer-tagline">Интеллектуальные платформы<br>управления для промышленности</p>
+        </div>
+        <div class="footer-nav">
+          <div class="footer-col">
+            <h4 class="footer-col-title">Компания</h4>
+            <a href="index.html" class="footer-link">О компании</a>
+            <a href="index.html#partners" class="footer-link">Партнёры</a>
+            <a href="index.html#contact" class="footer-link">Контакты</a>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-col-title">Решения</h4>
+            <a href="index.html" class="footer-link">Астра СИМ 2.0</a>
+            <a href="index.html" class="footer-link">Астра КИП</a>
+            <a href="index.html#industries" class="footer-link">Отрасли</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <span class="footer-copy">&copy; 2024 Сатурн Индастрис. Все права защищены.</span>
+        <div class="footer-social">
+          <a href="#" class="footer-social-link"><i data-lucide="mail"></i></a>
+          <a href="#" class="footer-social-link"><i data-lucide="phone"></i></a>
+          <a href="#" class="footer-social-link"><i data-lucide="globe"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Наверх">
+    <i data-lucide="arrow-up"></i>
+  </button>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="article.js"></script>
+</body>
+</html>

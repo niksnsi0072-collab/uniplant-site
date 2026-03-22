@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Новости — ЮниПлант</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="news.css">
+</head>
+<body>
+
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-bar"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src="img/logo-rus.png" alt="ЮниПлант" class="logo-img">
+      </a>
+      <nav class="nav" id="nav">
+        <a href="index.html#industries" class="nav-link">Отрасли</a>
+        <a href="index.html#solutions" class="nav-link">Наши решения</a>
+        <a href="index.html#partners" class="nav-link">Партнёры</a>
+        <a href="news.html" class="nav-link">Новости</a>
+        <a href="index.html#contact" class="nav-link">Контакты</a>
+      </nav>
+      <div class="header-right">
+        <div class="lang-toggle">
+          <button class="lang-btn lang-btn--active">RU</button>
+          <button class="lang-btn">EN</button>
+        </div>
+        <button class="burger" id="burger" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <nav class="mobile-nav">
+      <a href="index.html#industries" class="mobile-nav-link">Отрасли</a>
+      <a href="index.html#solutions" class="mobile-nav-link">Наши решения</a>
+      <a href="index.html#partners" class="mobile-nav-link">Партнёры</a>
+      <a href="news.html" class="mobile-nav-link">Новости</a>
+      <a href="index.html#contact" class="mobile-nav-link">Контакты</a>
+    </nav>
+  </div>
+
+  <!-- News Hero -->
+  <section class="news-hero">
+    <div class="news-hero-inner">
+      <div class="breadcrumb">
+        <a href="index.html">Главная</a>
+        <span>/</span>
+        <span class="breadcrumb-current">Новости</span>
+      </div>
+      <h1 class="news-page-title">Новости</h1>
+      <p class="news-page-sub">Последние события и обновления компании</p>
+    </div>
+  </section>
+
+  <!-- News List -->
+  <section class="news-list-section">
+    <div class="news-list-inner">
+
+      <!-- Featured News -->
+      <a href="article.html" class="news-featured">
+        <div class="news-featured-img">
+          <img src="img/about-hero.png" alt="">
+        </div>
+        <div class="news-featured-content">
+          <div class="news-featured-meta">
+            <span class="news-tag">Продукты</span>
+            <span class="news-date-label">Октябрь 2025</span>
+          </div>
+          <h2 class="news-featured-title">Астра КИП: система диагностики состояния средств и систем автоматизации с использованием интерфейса дополненной реальности</h2>
+          <p class="news-featured-desc">Инновационная система диагностики средств автоматизации с AR-интерфейсом представлена на XIV Петербургском международном газовом форуме на стенде ООО «Газпром добыча Астрахань».</p>
+          <span class="news-read-more">Читать далее <i data-lucide="arrow-right"></i></span>
+        </div>
+      </a>
+
+      <!-- News Grid -->
+      <div class="news-page-grid">
+        <a href="article.html" class="news-card">
+          <div class="news-img"><img src="img/solution-sim.png" alt=""></div>
+          <div class="news-body">
+            <div class="news-card-meta">
+              <span class="news-tag news-tag--sm">Платформа</span>
+              <span class="news-date">15 марта 2026</span>
+            </div>
+            <h3 class="news-title">Запуск новой платформы автоматизации UniPlant 3.0</h3>
+            <p class="news-desc">Мы рады представить обновлённую версию нашей флагманской платформы с расширенными возможностями мониторинга и диагностики.</p>
+            <span class="news-read-more">Читать далее <i data-lucide="arrow-right"></i></span>
+          </div>
+        </a>
+        <a href="article.html" class="news-card">
+          <div class="news-img"><img src="img/solution-kip.png" alt=""></div>
+          <div class="news-body">
+            <div class="news-card-meta">
+              <span class="news-tag news-tag--sm">Партнёрство</span>
+              <span class="news-date">28 февраля 2026</span>
+            </div>
+            <h3 class="news-title">Партнёрство с Siemens в области цифровых двойников</h3>
+            <p class="news-desc">UniPlant и Siemens объединяют усилия для создания цифровых двойников промышленных объектов нового поколения.</p>
+            <span class="news-read-more">Читать далее <i data-lucide="arrow-right"></i></span>
+          </div>
+        </a>
+        <a href="article.html" class="news-card">
+          <div class="news-img"><img src="img/industry-energy.png" alt=""></div>
+          <div class="news-body">
+            <div class="news-card-meta">
+              <span class="news-tag news-tag--sm">Отрасли</span>
+              <span class="news-date">10 января 2026</span>
+            </div>
+            <h3 class="news-title">Внедрение системы мониторинга на объектах энергетического комплекса</h3>
+            <p class="news-desc">Успешно завершён пилотный проект по внедрению интеллектуального мониторинга на крупном энергообъекте в Поволжье.</p>
+            <span class="news-read-more">Читать далее <i data-lucide="arrow-right"></i></span>
+          </div>
+        </a>
+        <a href="article.html" class="news-card">
+          <div class="news-img"><img src="img/industry-oil.png" alt=""></div>
+          <div class="news-body">
+            <div class="news-card-meta">
+              <span class="news-tag news-tag--sm">Проекты</span>
+              <span class="news-date">15 декабря 2025</span>
+            </div>
+            <h3 class="news-title">Запуск тренажёрного комплекса на Амурском ГПЗ</h3>
+            <p class="news-desc">Тренажёрный комплекс «Астра СИМ 2.0» введён в эксплуатацию для подготовки операторов Амурского газоперерабатывающего завода.</p>
+            <span class="news-read-more">Читать далее <i data-lucide="arrow-right"></i></span>
+          </div>
+        </a>
+        <a href="article.html" class="news-card">
+          <div class="news-img"><img src="img/industry-chem.png" alt=""></div>
+          <div class="news-body">
+            <div class="news-card-meta">
+              <span class="news-tag news-tag--sm">Конференции</span>
+              <span class="news-date">20 ноября 2025</span>
+            </div>
+            <h3 class="news-title">Участие в форуме «Цифровая индустрия 2025»</h3>
+            <p class="news-desc">Команда ЮниПлант представила доклад о перспективах применения отечественных систем управления в химической промышленности.</p>
+            <span class="news-read-more">Читать далее <i data-lucide="arrow-right"></i></span>
+          </div>
+        </a>
+        <a href="article.html" class="news-card">
+          <div class="news-img"><img src="https://images.unsplash.com/photo-1702012464652-04c70b577758?fit=crop&w=800&q=80" alt=""></div>
+          <div class="news-body">
+            <div class="news-card-meta">
+              <span class="news-tag news-tag--sm">Продукты</span>
+              <span class="news-date">5 октября 2025</span>
+            </div>
+            <h3 class="news-title">Обновление модуля диагностики в Астра КИП</h3>
+            <p class="news-desc">Вышла версия 2.4 с расширенными возможностями удалённой диагностики по протоколу HART и поддержкой LoRaWAN.</p>
+            <span class="news-read-more">Читать далее <i data-lucide="arrow-right"></i></span>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="img/footer-logo.png" alt="Сатурн Индастрис" class="footer-logo">
+          <p class="footer-tagline">Интеллектуальные платформы<br>управления для промышленности</p>
+        </div>
+        <div class="footer-nav">
+          <div class="footer-col">
+            <h4 class="footer-col-title">Компания</h4>
+            <a href="index.html" class="footer-link">О компании</a>
+            <a href="index.html#partners" class="footer-link">Партнёры</a>
+            <a href="index.html#contact" class="footer-link">Контакты</a>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-col-title">Решения</h4>
+            <a href="index.html" class="footer-link">Астра СИМ 2.0</a>
+            <a href="index.html" class="footer-link">Астра КИП</a>
+            <a href="index.html#industries" class="footer-link">Отрасли</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <span class="footer-copy">&copy; 2024 Сатурн Индастрис. Все права защищены.</span>
+        <div class="footer-social">
+          <a href="#" class="footer-social-link"><i data-lucide="mail"></i></a>
+          <a href="#" class="footer-social-link"><i data-lucide="phone"></i></a>
+          <a href="#" class="footer-social-link"><i data-lucide="globe"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Наверх">
+    <i data-lucide="arrow-up"></i>
+  </button>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="news.js"></script>
+</body>
+</html>

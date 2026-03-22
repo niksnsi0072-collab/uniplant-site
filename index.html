@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ЮниПлант — Интеллектуальные системы управления</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-bar"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="#" class="logo">
+        <img src="img/logo-rus.png" alt="ЮниПлант" class="logo-img">
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#industries" class="nav-link">Отрасли</a>
+        <a href="#solutions" class="nav-link">Наши решения</a>
+        <a href="#partners" class="nav-link">Партнёры</a>
+        <a href="#news" class="nav-link">Новости</a>
+        <a href="#contact" class="nav-link">Контакты</a>
+      </nav>
+      <div class="header-right">
+        <div class="lang-toggle">
+          <button class="lang-btn lang-btn--active">RU</button>
+          <button class="lang-btn">EN</button>
+        </div>
+        <button class="burger" id="burger" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobileMenu">
+    <nav class="mobile-nav">
+      <a href="#industries" class="mobile-nav-link">Отрасли</a>
+      <a href="#solutions" class="mobile-nav-link">Наши решения</a>
+      <a href="#partners" class="mobile-nav-link">Партнёры</a>
+      <a href="#news" class="mobile-nav-link">Новости</a>
+      <a href="#contact" class="mobile-nav-link">Контакты</a>
+    </nav>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="img/hero-bg.png" alt="" class="hero-bg-img">
+      <div class="hero-lights" id="heroLights"></div>
+      <div class="hero-glow" id="heroGlow"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-tag">Инженерные решения нового поколения</div>
+      <h1 class="hero-title">Интеллектуальные<br>системы управления<br>для промышленных<br>предприятий</h1>
+      <p class="hero-sub">Разрабатываем и внедряем отечественные решения для управления производственными процессами. Наши продукты помогают предприятиям контролировать, анализировать и совершенствовать работу технологических систем.</p>
+      <div class="hero-ctas">
+        <button class="btn btn--primary" data-modal="about">О компании</button>
+        <a href="#solutions" class="btn btn--outline">Наши решения</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Industries Section -->
+  <section class="section section--gray" id="industries">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title"><span>РЕШАЕМ ЗАДАЧИ ДЛЯ ОТРАСЛЕЙ</span></h2>
+        <p class="section-sub">Наши продукты адаптированы под специфику различных отраслей промышленности</p>
+      </div>
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-img"><img src="img/industry-oil.png" alt="Нефтегазовая"></div>
+          <h3 class="card-title">Нефтегазовая</h3>
+          <p class="card-text">Мониторинг добычи и переработки<br>Учёт, моделирование процессов<br>Снижение простоев</p>
+        </div>
+        <div class="card">
+          <div class="card-img"><img src="img/industry-chem.png" alt="Химическая"></div>
+          <h3 class="card-title">Химическая</h3>
+          <p class="card-text">Контроль технологических линий<br>Предотвращение сбоев<br>Аналитика отклонений</p>
+        </div>
+        <div class="card">
+          <div class="card-img"><img src="img/industry-energy.png" alt="Энергетика"></div>
+          <h3 class="card-title">Энергетика</h3>
+          <p class="card-text">Управление энергоресурсами<br>Диагностика оборудования<br>Повышение надёжности</p>
+        </div>
+        <div class="card">
+          <div class="card-img"><img src="https://images.unsplash.com/photo-1649958803688-05ba373c1fc4?fit=crop&w=800&q=80" alt="Горнодобывающая"></div>
+          <h3 class="card-title">Горнодобывающая</h3>
+          <p class="card-text">Транспорт и обогащение<br>Трекинг показателей<br>Безопасность работ</p>
+        </div>
+        <div class="card">
+          <div class="card-img"><img src="https://images.unsplash.com/photo-1702012464652-04c70b577758?fit=crop&w=800&q=80" alt="Металлургия"></div>
+          <h3 class="card-title">Металлургия</h3>
+          <p class="card-text">Оптимизация печей и проката<br>Качество продукции<br>Снижение брака</p>
+        </div>
+        <div class="card">
+          <div class="card-img"><img src="https://images.unsplash.com/photo-1589109807644-924edf14ee09?fit=crop&w=800&q=80" alt="Пищевая"></div>
+          <h3 class="card-title">Пищевая</h3>
+          <p class="card-text">Прослеживаемость партий<br>Контроль качества<br>Соблюдение регламентов</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solutions Section -->
+  <section class="section" id="solutions">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title"><span>НАШИ РЕШЕНИЯ</span></h2>
+        <p class="section-sub">Программные продукты для промышленной автоматизации</p>
+      </div>
+      <div class="solutions-grid">
+        <!-- Astra SIM -->
+        <div class="solution-card">
+          <div class="solution-img">
+            <img src="img/solution-sim.png" alt="Астра СИМ 2.0">
+            <div class="solution-img-overlay"></div>
+          </div>
+          <div class="solution-content">
+            <span class="solution-tag">Тренажёрный комплекс</span>
+            <h3 class="solution-name">Астра СИМ 2.0</h3>
+            <p class="solution-desc">Тренажёрный комплекс для обучения оперативного персонала: моделирование процессов, сценарии пуск/останов, аварии, оценка компетенций.</p>
+            <ul class="solution-features">
+              <li><i data-lucide="circle-check"></i> Модели физико-химических процессов</li>
+              <li><i data-lucide="circle-check"></i> Интеграция с АСУ ТП</li>
+              <li><i data-lucide="circle-check"></i> Тесты и отчёты по результатам</li>
+            </ul>
+            <button class="btn btn--primary btn--sm" data-modal="sim">Подробнее <i data-lucide="arrow-right"></i></button>
+          </div>
+          <div class="solution-reg">
+            <i data-lucide="shield-check"></i>
+            <span>В реестре Российского ПО</span>
+          </div>
+        </div>
+        <!-- Astra KIP -->
+        <div class="solution-card">
+          <div class="solution-img">
+            <img src="img/solution-kip.png" alt="Астра КИП">
+            <div class="solution-img-overlay"></div>
+          </div>
+          <div class="solution-content">
+            <span class="solution-tag">Автоматизация КИП</span>
+            <h3 class="solution-name">Астра КИП</h3>
+            <p class="solution-desc">Автоматизация деятельности службы КИП: учёт оборудования, ППР/ТОиР, удалённая настройка HART/RS-485, мониторинг уставок и параметров.</p>
+            <ul class="solution-features">
+              <li><i data-lucide="circle-check"></i> Микросервисная архитектура</li>
+              <li><i data-lucide="circle-check"></i> Linux / отечественные дистрибутивы</li>
+              <li><i data-lucide="circle-check"></i> База оборудования + мобильное приложение</li>
+            </ul>
+            <button class="btn btn--primary btn--sm" data-modal="kip">Подробнее <i data-lucide="arrow-right"></i></button>
+          </div>
+          <div class="solution-reg">
+            <i data-lucide="shield-check"></i>
+            <span>В реестре Российского ПО</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section" id="cta">
+    <div class="cta-bg"></div>
+    <div class="cta-deco cta-deco--1"></div>
+    <div class="cta-deco cta-deco--2"></div>
+    <div class="cta-deco cta-deco--3"></div>
+    <div class="cta-content">
+      <i data-lucide="message-circle" class="cta-icon"></i>
+      <div class="cta-badge">СВЯЖИТЕСЬ С НАМИ</div>
+      <h2 class="cta-title">Готовы обсудить ваш проект?</h2>
+      <p class="cta-sub">Свяжитесь с нами, и мы подберём оптимальное решение для вашего предприятия</p>
+      <div class="cta-buttons">
+        <a href="#contact" class="btn btn--white">Оставить заявку</a>
+        <a href="mailto:info@uniplant.ru" class="btn btn--outline-white">Написать нам</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partners Section -->
+  <section class="section" id="partners">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title"><span>ПАРТНЁРЫ</span></h2>
+      </div>
+      <div class="marquee">
+        <div class="marquee-track">
+          <div class="partner-logo"><img src="img/partner-amur.png" alt="Амурский ГПЗ"></div>
+          <div class="partner-logo"><img src="img/partner-isp.png" alt="ИСП РАН"></div>
+          <div class="partner-logo"><img src="img/partner-tusur.png" alt="ТУСУР"></div>
+          <div class="partner-logo"><img src="img/partner-polytech.png" alt="Политех"></div>
+          <div class="partner-logo"><img src="img/partner-gazprom-auto.png" alt="Газпром автоматизация"></div>
+          <div class="partner-logo"><img src="img/partner-gazprom-astr.png" alt="Газпром Добыча Астрахань"></div>
+          <div class="partner-logo"><img src="img/partner-bauman.png" alt="МГТУ им. Баумана"></div>
+          <div class="partner-logo"><img src="img/partner-msu.png" alt="МГУ"></div>
+          <!-- Duplicated for seamless loop -->
+          <div class="partner-logo"><img src="img/partner-amur.png" alt="Амурский ГПЗ"></div>
+          <div class="partner-logo"><img src="img/partner-isp.png" alt="ИСП РАН"></div>
+          <div class="partner-logo"><img src="img/partner-tusur.png" alt="ТУСУР"></div>
+          <div class="partner-logo"><img src="img/partner-polytech.png" alt="Политех"></div>
+          <div class="partner-logo"><img src="img/partner-gazprom-auto.png" alt="Газпром автоматизация"></div>
+          <div class="partner-logo"><img src="img/partner-gazprom-astr.png" alt="Газпром Добыча Астрахань"></div>
+          <div class="partner-logo"><img src="img/partner-bauman.png" alt="МГТУ им. Баумана"></div>
+          <div class="partner-logo"><img src="img/partner-msu.png" alt="МГУ"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News Section -->
+  <section class="section section--blue-bg" id="news">
+    <div class="container">
+      <div class="section-header section-header--row">
+        <h2 class="section-title"><span>НОВОСТИ</span></h2>
+        <a href="news.html" class="btn btn--primary btn--sm">Все новости</a>
+      </div>
+      <div class="news-grid">
+        <a href="article.html" class="news-card">
+          <div class="news-img"><img src="img/solution-sim.png" alt=""></div>
+          <div class="news-body">
+            <span class="news-date">15 марта 2026</span>
+            <h3 class="news-title">Запуск новой платформы автоматизации UniPlant 3.0</h3>
+            <p class="news-desc">Мы рады представить обновлённую версию нашей флагманской платформы с расширенными возможностями мониторинга и диагностики.</p>
+          </div>
+        </a>
+        <a href="article.html" class="news-card">
+          <div class="news-img"><img src="img/solution-kip.png" alt=""></div>
+          <div class="news-body">
+            <span class="news-date">28 февраля 2026</span>
+            <h3 class="news-title">Партнёрство с Siemens в области цифровых двойников</h3>
+            <p class="news-desc">UniPlant и Siemens объединяют усилия для создания цифровых двойников промышленных объектов нового поколения.</p>
+          </div>
+        </a>
+        <a href="article.html" class="news-card">
+          <div class="news-img"><img src="img/about-hero.png" alt=""></div>
+          <div class="news-body">
+            <span class="news-date">Октябрь 2025</span>
+            <h3 class="news-title">Астра КИП: система диагностики с дополненной реальностью</h3>
+            <p class="news-desc">Инновационная система диагностики средств автоматизации с AR-интерфейсом представлена на XIV Петербургском газовом форуме.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="section section--gray" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title"><span>ОСТАВЬТЕ ЗАЯВКУ</span></h2>
+        <p class="section-sub">Мы свяжемся с вами в ближайшее время</p>
+      </div>
+      <form class="form-box" id="contactForm">
+        <div class="form-row">
+          <div class="form-field">
+            <label class="form-label" for="name">Имя</label>
+            <input type="text" id="name" class="form-input" placeholder="Ваше имя">
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="email">Email</label>
+            <input type="email" id="email" class="form-input" placeholder="email@example.com">
+          </div>
+        </div>
+        <div class="form-field">
+          <label class="form-label" for="message">Сообщение</label>
+          <textarea id="message" class="form-input form-textarea" placeholder="Опишите ваш проект"></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--submit">
+          <span class="btn-text">Отправить заявку</span>
+          <span class="btn-wipe"></span>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="img/footer-logo.png" alt="Сатурн Индастрис" class="footer-logo">
+          <p class="footer-tagline">Интеллектуальные платформы<br>управления для промышленности</p>
+        </div>
+        <div class="footer-nav">
+          <div class="footer-col">
+            <h4 class="footer-col-title">Компания</h4>
+            <a href="#" class="footer-link" data-modal="about">О компании</a>
+            <a href="#partners" class="footer-link">Партнёры</a>
+            <a href="#contact" class="footer-link">Контакты</a>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-col-title">Решения</h4>
+            <a href="#" class="footer-link" data-modal="sim">Астра СИМ 2.0</a>
+            <a href="#" class="footer-link" data-modal="kip">Астра КИП</a>
+            <a href="#industries" class="footer-link">Отрасли</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <span class="footer-copy">&copy; 2024 Сатурн Индастрис. Все права защищены.</span>
+        <div class="footer-social">
+          <a href="#" class="footer-social-link"><i data-lucide="mail"></i></a>
+          <a href="#" class="footer-social-link"><i data-lucide="phone"></i></a>
+          <a href="#" class="footer-social-link"><i data-lucide="globe"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Наверх">
+    <i data-lucide="arrow-up"></i>
+  </button>
+
+  <!-- Modal: About Company -->
+  <div class="modal-overlay" id="modal-about">
+    <div class="modal modal--about">
+      <button class="modal-close"><i data-lucide="x"></i></button>
+      <div class="modal-hero-img">
+        <img src="img/about-hero.png" alt="О компании">
+      </div>
+      <h2 class="modal-title">О компании</h2>
+      <p class="modal-text">Инженерно-технологическая компания, специализирующаяся на разработке и внедрении отечественных решений для управления производственными процессами. Наши продукты помогают предприятиям контролировать, анализировать и совершенствовать работу технологических систем, обеспечивая устойчивость и предсказуемость производства.</p>
+      <p class="modal-text">Также мы сотрудничаем с ведущими университетами и научно-техническими институтами России, реализуя программы совместных исследований, стажировок и опытных проектов. Так мы обеспечиваем преемственность инженерных знаний, формируем новые компетенции и поддерживаем развитие отечественных технологий.</p>
+      <div class="modal-divider"></div>
+      <h3 class="modal-subtitle">Партнёрские направления</h3>
+      <div class="modal-dirs">
+        <div class="modal-dir">
+          <div class="modal-dir-icon"><i data-lucide="cpu"></i></div>
+          <p>Разработка алгоритмов моделирования и диагностики</p>
+        </div>
+        <div class="modal-dir">
+          <div class="modal-dir-icon"><i data-lucide="test-tubes"></i></div>
+          <p>Испытания и верификация новых решений</p>
+        </div>
+        <div class="modal-dir">
+          <div class="modal-dir-icon"><i data-lucide="presentation"></i></div>
+          <p>Обучение инженеров и операторов промышленного оборудования</p>
+        </div>
+        <div class="modal-dir">
+          <div class="modal-dir-icon"><i data-lucide="atom"></i></div>
+          <p>Научно-исследовательские проекты в области автоматизации и управления</p>
+        </div>
+      </div>
+      <h3 class="modal-subtitle">Наш приоритет — партнёрские отношения</h3>
+      <p class="modal-text modal-text--center">Основной целью нашей компании является установление долгосрочных партнерских отношений со своими клиентами, поэтому в работе мы не стремимся к сиюминутной максимизации прибыли</p>
+      <div class="modal-cards">
+        <div class="modal-card">
+          <div class="modal-card-icon"><i data-lucide="users"></i></div>
+          <h4>Команда</h4>
+          <p>Имеем в своей команде высококлассных, опытных экспертов области создания программного обеспечения</p>
+        </div>
+        <div class="modal-card">
+          <div class="modal-card-icon"><i data-lucide="cpu"></i></div>
+          <h4>Технологии</h4>
+          <p>Наш богатый опыт позволяет нам решать любые задачи с использованием собственных наработок и открытого ПО</p>
+        </div>
+        <div class="modal-card">
+          <div class="modal-card-icon"><i data-lucide="lightbulb"></i></div>
+          <h4>Решения</h4>
+          <p>Мы разрабатываем как собственные продукты, так и создаем решения на заказ</p>
+        </div>
+      </div>
+      <div class="modal-cards modal-cards--2">
+        <div class="modal-card">
+          <div class="modal-card-icon"><i data-lucide="handshake"></i></div>
+          <h4>Сотрудничество</h4>
+          <p>Решения созданные нашими специалистами работают в крупнейших компаниях РФ</p>
+        </div>
+        <div class="modal-card">
+          <div class="modal-card-icon"><i data-lucide="key"></i></div>
+          <h4>Под-ключ</h4>
+          <p>Всегда готовы предложить решение «под ключ», начиная с разработки проекта и заканчивая пуско-наладкой</p>
+        </div>
+      </div>
+      <p class="modal-motto">Инженерная точность. Российские технологии. Надёжный результат.</p>
+    </div>
+  </div>
+
+  <!-- Modal: Astra SIM 2.0 -->
+  <div class="modal-overlay" id="modal-sim">
+    <div class="modal modal--product">
+      <div class="modal-product-left">
+        <span class="solution-tag solution-tag--light">Тренажёрный комплекс</span>
+        <h2 class="modal-product-title">Астра СИМ 2.0</h2>
+        <div class="modal-product-img">
+          <img src="img/solution-sim.png" alt="Астра СИМ 2.0">
+        </div>
+        <p class="modal-text">Астра СИМ 2.0 — тренажёрный комплекс, позволяющий проводить обучение и отработку практических навыков оперативного персонала, оценку его профессионального уровня.</p>
+        <p class="modal-text modal-text--bold">ТК реализует следующие бизнес-функции:</p>
+        <ul class="modal-list">
+          <li>Моделирование физико-химических процессов</li>
+          <li>Моделирование алгоритмов систем управления</li>
+          <li>Работа в автоматическом и ручном режимах</li>
+          <li>Проверка теоретических знаний персонала</li>
+          <li>Формирование отчётных документов</li>
+        </ul>
+        <div class="modal-product-icons">
+          <div class="modal-product-icon modal-product-icon--1"><i data-lucide="monitor"></i></div>
+          <div class="modal-product-icon modal-product-icon--2"><i data-lucide="settings"></i></div>
+          <div class="modal-product-icon modal-product-icon--3"><i data-lucide="chart-bar"></i></div>
+        </div>
+      </div>
+      <div class="modal-product-right">
+        <button class="modal-close"><i data-lucide="x"></i></button>
+        <h3 class="modal-product-right-title">Функциональные характеристики программного обеспечения</h3>
+        <p class="modal-text">Программное обеспечение «Астра СИМ 2.0» предназначено для обучения операторов АСУ ТП (децентрализованной системы управления) промышленных объектов.</p>
+        <p class="modal-text modal-text--bold">ПО «Астра СИМ 2.0» решает следующие задачи:</p>
+        <ul class="modal-list">
+          <li>Освоение технологии производства, интерфейса оператора</li>
+          <li>Отработка действий в среде управления при пуске и останове установки</li>
+          <li>Управление энергоэффективностью операторов, его навыков и опыта работы</li>
+          <li>Объективная оценка уровня подготовки и компетенции операторов</li>
+        </ul>
+        <div class="modal-arch">
+          <p class="modal-text modal-text--bold">Архитектура ПО «Астра СИМ 2.0» построена с использованием микросервисного подхода</p>
+          <p class="modal-text modal-text--small">Сервис «Моделирование» &bull; Сервис «Сценарии» &bull; Сервис «Управление сессией обучения» &bull; Сервис «Интеграция с системой управления»</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Astra KIP -->
+  <div class="modal-overlay" id="modal-kip">
+    <div class="modal modal--product">
+      <div class="modal-product-left">
+        <span class="solution-tag solution-tag--light">Автоматизация КИП</span>
+        <h2 class="modal-product-title">Астра КИП</h2>
+        <div class="modal-product-img">
+          <img src="img/solution-kip.png" alt="Астра КИП">
+        </div>
+        <p class="modal-text">Астра КИП — предназначена для автоматизации повседневной деятельности эксплуатационного персонала, связанной с обеспечением надёжности, обслуживанием и ремонтом КИП.</p>
+        <p class="modal-text modal-text--bold">ТК реализует следующие бизнес-функции:</p>
+        <ul class="modal-list">
+          <li>Ведение базы данных технологического оборудования и средств измерений</li>
+          <li>Автоматическое формирование графиков ППР, технического обслуживания</li>
+          <li>Планирование сроков проведения МО, контроля, испытаний</li>
+          <li>Учёт актуализации данных о датчиках и регуляторах</li>
+        </ul>
+        <div class="modal-product-icons">
+          <div class="modal-product-icon modal-product-icon--1"><i data-lucide="gauge"></i></div>
+          <div class="modal-product-icon modal-product-icon--2"><i data-lucide="wrench"></i></div>
+          <div class="modal-product-icon modal-product-icon--3"><i data-lucide="database"></i></div>
+        </div>
+      </div>
+      <div class="modal-product-right">
+        <button class="modal-close"><i data-lucide="x"></i></button>
+        <h3 class="modal-product-right-title">Функциональные характеристики программного обеспечения</h3>
+        <p class="modal-text">Программное обеспечение «Астра КИП» предназначено для автоматизации деятельности служб КИП промышленных объектов.</p>
+        <p class="modal-text modal-text--bold">ПО «Астра КИП» решает следующие задачи:</p>
+        <ul class="modal-list">
+          <li>Централизованное управление базой данных оборудования, его состояния и месте установки</li>
+          <li>Контроль состояния устройств и выполнения диагностики на лету</li>
+          <li>Проведение удалённой настройки приборов</li>
+          <li>Сбор детальных сводных отчётов об общей совокупной готовности КИП</li>
+        </ul>
+        <div class="modal-arch">
+          <p class="modal-text modal-text--bold">Архитектура ПО «Астра КИП» построена с использованием микросервисного подхода</p>
+          <p class="modal-text modal-text--small">Сервис «База данных оборудования» &bull; Сервис «Планирование настройки и диагностики» &bull; Сервис «Документация»</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
