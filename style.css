@@ -1015,7 +1015,7 @@ input, textarea { font-family: inherit; outline: none; }
     padding: 60px 20px;
     min-height: auto;
   }
-  .hero-bg-img { object-position: 70% center; }
+  .hero-bg-img { object-fit: contain; object-position: top center; }
   .hero-content {
     gap: 24px;
   }
